@@ -1,0 +1,44 @@
+#skills {
+  width: 100vw;
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.skill-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skill-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+@media screen and (max-width: 720px) {
+  .skill-element {
+    width: 80px; /* Modifiez cette largeur selon vos besoins */
+  }
+
+  .skill-img {
+    width: 60px; /* Modifiez cette largeur selon vos besoins */
+    height: 60px; /* Modifiez cette hauteur selon vos besoins */
+  }
+}
